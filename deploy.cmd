@@ -1,0 +1,1 @@
+RMDIR /Q /s docs & npm run build & ren build docs & git add . & git commit -m "UPDATE" & git push
