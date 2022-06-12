@@ -1,19 +1,17 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-// import { MuiThemeProvider, StylesProvider } from '@mui/material/styles'
-import { getTheme } from './theme'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTheme } from '@mui/material/styles';
 import App from './App';
+
 
 const Root = (props) => {
 
-  const themeType = localStorage.getItem('themetype')
-  const theme = getTheme(themeType)
+  const usetheme = useTheme();
+  const matches = useMediaQuery(usetheme.breakpoints.up('sm'));
 
   return (
     <React.Fragment>
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>
+      <App mobileView={!matches} />
     </React.Fragment>
   );
 }

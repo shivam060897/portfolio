@@ -1,9 +1,12 @@
 import React from 'react';
+import { Intro } from './components'
+// import palette from './theme/dark/palette'
 
 const App = (props) => {
+
   return (
     <React.Fragment>
-      Kumar Shivam Ray
+      <Intro />
     </React.Fragment>
   );
 }
