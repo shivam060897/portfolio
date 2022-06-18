@@ -1,6 +1,6 @@
 import React from 'react';
 import biodata from './data/biodata';
-// import me from './data/me.jpg'
+import me from './data/me.jpg'
 import { AboutMe, Education, Experience } from './components'
 import stackoverflow from './data/stackoverflow512.png'
 import { Avatar, Grid, IconButton, Card, CardHeader, CardContent, Divider, Typography } from '@mui/material';
@@ -22,7 +22,7 @@ const App = (props) => {
                 <CardContent>
                   <Grid container direction={'column'} justifyContent="center" alignItems="center">
                     <Grid item>
-                      <Avatar alt={biodata.name} src={'https://shivam060897.github.io/portfolio/me.jpg'} sx={{ width: 150, height: 150 }} />
+                      <Avatar alt={biodata.name} src={me} sx={{ width: 150, height: 150 }} />
                     </Grid>
                     <Grid item>
                       <Typography variant='h6' align='center' color={'#FFFFFF'}>{biodata.name}</Typography>
