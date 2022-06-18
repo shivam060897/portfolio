@@ -1,6 +1,6 @@
 import React from 'react';
 import biodata from './data/biodata';
-import me from './data/me.jpg'
+// import me from './data/me.jpg'
 import { AboutMe, Education, Experience } from './components'
 import stackoverflow from './data/stackoverflow512.png'
 import { Avatar, Grid, IconButton, Card, CardHeader, CardContent, Divider, Typography } from '@mui/material';
