@@ -11,8 +11,8 @@ const theme = {
         hint: '#000000',
     },
     primary: {
-        main: '#000000',
-        light: '#000000',
+        main: '#252525',
+        light: '#424242',
         dark: '#000000',
         contrastText: '#000000',
     },

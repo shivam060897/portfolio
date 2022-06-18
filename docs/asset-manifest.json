@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.fb532045.css",
-    "main.js": "/static/js/main.5f7e8035.js",
+    "main.js": "/static/js/main.69e8f3a0.js",
+    "static/media/stackoverflow512.png": "/static/media/stackoverflow512.646c17678134aff4fe20.png",
+    "static/media/me.jpg": "/static/media/me.3f8fe67066ab3714911c.jpg",
     "index.html": "/index.html",
     "main.fb532045.css.map": "/static/css/main.fb532045.css.map",
-    "main.5f7e8035.js.map": "/static/js/main.5f7e8035.js.map"
+    "main.69e8f3a0.js.map": "/static/js/main.69e8f3a0.js.map"
   },
   "entrypoints": [
     "static/css/main.fb532045.css",
-    "static/js/main.5f7e8035.js"
+    "static/js/main.69e8f3a0.js"
   ]
 }

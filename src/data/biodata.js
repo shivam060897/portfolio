@@ -1,5 +1,13 @@
 const biodata = {
     name: "Kumar Shivam Ray",
+    address: {
+        village: 'Pipra',
+        post: 'Daraundha',
+        district: 'Siwan',
+        state: 'Bihar',
+        country: 'India',
+        pincode: 841233,
+    },
     dob: {
         date: "06",
         month: "08",
@@ -44,81 +52,56 @@ const biodata = {
         },
     },
     skills: {
-        main: [
-            "Python", "React JS", "Core Java", "MySQL", "Android Java", "Docker", "Docker Swarm",
-            "Linux - Product Management",
-        ],
-        secondary: [
-            "HTML", "XML", "Shell Scripting",
-        ]
+        main: ["Python", "React JS", "Core Java", "MySQL", "Docker", "Docker Swarm"],
+        secondary: ["Android Java", "HTML", "XML", "Shell Scripting", "Linux"]
     },
-    expericence: {
-        1: {
-            from: {
-                date: "08",
-                month: "07",
-                year: "2019"
-            },
-            to: {
-                date: "31",
-                month: "12",
-                year: "2019"
-            },
-            organization: "Highradius",
-            department: "Robotic Process Automation (RPA)",
-            position: "Intern",
-            website: "https://www.highradius.com",
-        },
-        2: {
-            from: {
-                date: "20",
-                month: "01",
-                year: "2020"
-            },
-            to: {
-                date: "03",
-                month: "02",
-                year: "2021"
-            },
-            organization: "Ericsson India Global Services Pvt. Ltd.",
-            department: "Operations",
-            position: "Intern",
-            website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
-        },
-        3: {
-            from: {
-                date: "04",
-                month: "02",
-                year: "2021"
-            },
-            to: {
-                date: "31",
-                month: "03",
-                year: "2022"
-            },
-            organization: "Ericsson India Global Services Pvt. Ltd.",
-            department: "Robotic Process Automation (RPA)",
-            position: "Associate Engineer Trainee",
-            website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
-        },
-        4: {
-            from: {
-                date: "01",
-                month: "04",
-                year: "2022"
-            },
-            to: {
-                date: "*",
-                month: "*",
-                year: "*"
-            },
-            organization: "Ericsson India Global Services Pvt. Ltd.",
-            department: "Robotic Process Automation (RPA)",
-            position: "Software",
-            website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
-        },
+    expericence: [
+        {
 
-    },
+            organization: "Highradius",
+            roles: [{
+                department: "Robotic Process Automation (RPA)",
+                position: "Intern",
+                interval: {
+                    from: { date: "08", month: "07", year: "2019" },
+                    to: { date: "31", month: "12", year: "2019" },
+                }
+            }],
+            website: "https://www.highradius.com",
+            technologies: ['Java', 'MySQL'],
+        },
+        {
+            organization: "Ericsson India Global Services Pvt. Ltd.",
+            roles: [
+                {
+                    position: "Intern",
+                    department: "Operations",
+                    interval: {
+                        from: { date: "20", month: "01", year: "2020" },
+                        to: { date: "03", month: "02", year: "2021" },
+                    }
+                },
+                {
+                    position: "Associate Engineer Trainee",
+                    department: "Robotic Process Automation (RPA)",
+                    interval: {
+                        from: { date: "04", month: "02", year: "2021" },
+                        to: { date: "31", month: "03", year: "2022" },
+                    }
+                },
+                {
+                    position: "Associate Software Developer",
+                    department: "Robotic Process Automation (RPA)",
+                    interval: {
+                        from: { date: "01", month: "04", year: "2022" },
+                        to: { date: "*", month: "*", year: "*" },
+                    }
+                }
+            ],
+            website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
+            technologies: ['Python', 'Python Celery', 'React JS', 'MySQL', 'Elasticsearch', 'Redis', 'HTTPD'],
+        },
+    ],
     projects: {
         1: {
             name: "Media Player",
@@ -131,9 +114,7 @@ const biodata = {
             description: "Social Media Server Interface",
         },
     },
-    hobbies: [
-        "Software Development"
-    ]
+    hobbies: ["Software Development"]
 }
 
 export default biodata;
