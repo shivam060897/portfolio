@@ -1,7 +1,7 @@
 import React from 'react';
 import biodata from './data/biodata';
 import me from './data/me.jpg'
-import { Education } from './components'
+import { AboutMe, Education, Experience } from './components'
 import stackoverflow from './data/stackoverflow512.png'
 import { Avatar, Grid, IconButton, Card, CardHeader, CardContent, Divider, Typography } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -32,6 +32,9 @@ const App = (props) => {
                     </Grid>
                     <Grid item>
                       <Typography variant='caption' align='center' color={'#FFFFFF'}>{biodata.contact.mail}</Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography variant='caption' align='center' color={'#FFFFFF'}>{biodata.contact.phone.secondary}</Typography>
                     </Grid>
                     <Grid item>
                       <Typography variant='caption' align='left' color={'#FFFFFF'}>
@@ -100,7 +103,13 @@ const App = (props) => {
         <Grid item>
           <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start" spacing={1}>
             <Grid item>
-              <Education biodata={biodata.education} />
+              <AboutMe />
+            </Grid>
+            <Grid item>
+              <Education education={biodata.education} />
+            </Grid>
+            <Grid item>
+              <Experience expericences={biodata.expericence} />
             </Grid>
           </Grid>
         </Grid>

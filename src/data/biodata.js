@@ -8,6 +8,7 @@ const biodata = {
         country: 'India',
         pincode: 841233,
     },
+    aboutMe: [],
     dob: {
         date: "06",
         month: "08",
@@ -17,7 +18,7 @@ const biodata = {
     },
     contact: {
         phone: {
-            primary: "+91 9348569931",
+            primary: "+91 XXXXXXXXXX",
             secondary: "+91 9264278855",
         },
         mail: "kumarshivamray0656@gmail.com",
@@ -32,22 +33,26 @@ const biodata = {
     education: {
         2013: {
             name: "Class 10",
-            board: "CBSE",
+            // board: "CBSE",
+            school: "Navy Children School",
             location: "Visakhapatnam",
         },
         2015: {
             name: "Class 12",
-            board: "CBSE",
+            // board: "CBSE",
+            school: "MP & EV English Medium School",
             location: "Visakhapatnam",
         },
-        2016: {
-            name: "Year Drop",
-            board: "",
-            location: "Visakhapatnam",
-        },
+        // 2016: {
+        //     name: "Year Drop",
+        //     board: "",
+        //     school: "Aakash Institute",
+        //     location: "Visakhapatnam",
+        // },
         2020: {
             name: "Computer Science and Engineering",
             board: "Kalinga Institute of Industrial Technology",
+            school: "School of Computer Science & Engineering",
             location: "Bhubaneswar",
         },
     },
@@ -57,49 +62,27 @@ const biodata = {
     },
     expericence: [
         {
-
-            organization: "Highradius",
-            roles: [{
-                department: "Robotic Process Automation (RPA)",
-                position: "Intern",
-                interval: {
-                    from: { date: "08", month: "07", year: "2019" },
-                    to: { date: "31", month: "12", year: "2019" },
-                }
-            }],
-            website: "https://www.highradius.com",
-            technologies: ['Java', 'MySQL'],
-        },
-        {
             organization: "Ericsson India Global Services Pvt. Ltd.",
-            roles: [
-                {
-                    position: "Intern",
-                    department: "Operations",
-                    interval: {
-                        from: { date: "20", month: "01", year: "2020" },
-                        to: { date: "03", month: "02", year: "2021" },
-                    }
-                },
-                {
-                    position: "Associate Engineer Trainee",
-                    department: "Robotic Process Automation (RPA)",
-                    interval: {
-                        from: { date: "04", month: "02", year: "2021" },
-                        to: { date: "31", month: "03", year: "2022" },
-                    }
-                },
-                {
-                    position: "Associate Software Developer",
-                    department: "Robotic Process Automation (RPA)",
-                    interval: {
-                        from: { date: "01", month: "04", year: "2022" },
-                        to: { date: "*", month: "*", year: "*" },
-                    }
-                }
-            ],
+            position: "Associate Software Developer",
+            department: "Robotic Process Automation (RPA)",
+            interval: {
+                from: { date: "20", month: "01", year: "2020" },
+                to: { date: "*", month: "*", year: "*" },
+            },
             website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
             technologies: ['Python', 'Python Celery', 'React JS', 'MySQL', 'Elasticsearch', 'Redis', 'HTTPD'],
+        },
+        {
+
+            organization: "HighRadius Corporation",
+            department: "Robotic Process Automation (RPA)",
+            position: "Intern",
+            interval: {
+                from: { date: "08", month: "07", year: "2019" },
+                to: { date: "31", month: "12", year: "2019" },
+            },
+            website: "https://www.highradius.com",
+            technologies: ['Java', 'MySQL'],
         },
     ],
     projects: {
