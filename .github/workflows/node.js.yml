@@ -6,8 +6,7 @@ name: Deploy
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  # pull_request
 
 jobs:
   build:
@@ -15,8 +14,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'update')"
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [18.x]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
