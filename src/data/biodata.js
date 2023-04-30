@@ -66,11 +66,33 @@ const biodata = {
             position: "Associate Software Developer",
             department: "Robotic Process Automation (RPA)",
             interval: {
-                from: { date: "20", month: "01", year: "2020" },
+                from: { date: "04", month: "04", year: "2021" },
                 to: { date: "*", month: "*", year: "*" },
             },
             website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
             technologies: ['Python', 'Python Celery', 'React JS', 'MySQL', 'Elasticsearch', 'Redis', 'HTTPD'],
+        },
+        {
+            organization: "Ericsson India Global Services Pvt. Ltd.",
+            position: "Associate Engineer Trainee",
+            department: "Robotic Process Automation (RPA)",
+            interval: {
+                from: { date: "04", month: "02", year: "2021" },
+                to: { date: "03", month: "04", year: "2022" },
+            },
+            website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
+            technologies: ['Python', 'Python Celery', 'React JS', 'MySQL', 'Elasticsearch', 'Redis', 'HTTPD'],
+        },
+        {
+            organization: "Ericsson India Global Services Pvt. Ltd.",
+            position: "Intern",
+            department: "Telecom T2 Support",
+            interval: {
+                from: { date: "20", month: "01", year: "2020" },
+                to: { date: "03", month: "02", year: "2021" },
+            },
+            website: "https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/india",
+            technologies: [],
         },
         {
 
