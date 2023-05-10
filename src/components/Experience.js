@@ -11,7 +11,7 @@ const Experience = (props) => {
             <Card sx={{ background: '#424242', minWidth: '83vw' }}>
                 <CardHeader title='Experience' sx={{ color: '#FFFFFF' }} />
                 <CardContent sx={{ marginTop: -3 }}>
-                    <Grid container direction="column" justifyContent="flex-start" alignItems="flex-end" spacing={3}>
+                    <Grid container direction="row" justifyContent="flex-start" alignItems="flex-end" spacing={3}>
                         {
                             expericences.map((expericence) => (
                                 <Grid item>
