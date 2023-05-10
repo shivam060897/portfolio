@@ -10,7 +10,7 @@ const Education = ({ education }) => {
             <Card sx={{ background: '#424242', minWidth: '83vw' }}>
                 <CardHeader title='Education' sx={{ color: '#FFFFFF' }} />
                 <CardContent sx={{ marginTop: -3 }}>
-                    <Grid container direction="column" justifyContent="flex-start" alignItems="flex-end" spacing={3}>
+                    <Grid container direction="row" justifyContent="flex-start" alignItems="flex-end" spacing={3}>
                         <Grid item>
                             <Paper elevation={3} sx={{ padding: 2, background: '#303030' }}>
                                 <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start">
