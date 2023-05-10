@@ -11,10 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # if: "!contains(github.event.head_commit.message, 'update')"
-    # strategy:
-    #   matrix:
-    #     node-version: [18.x]
+    if: "!contains(github.event.head_commit.message, 'update')"
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
