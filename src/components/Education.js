@@ -2,8 +2,7 @@ import React from 'react'
 import { Card, CardHeader, CardContent, Grid, Paper, Typography } from '@mui/material';
 
 
-const Education = (props) => {
-    const { education } = props
+const Education = ({ education }) => {
     const years = Object.keys(education).sort((a, b) => a - b).reverse()
 
     return (
