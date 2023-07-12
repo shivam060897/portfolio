@@ -1,7 +1,32 @@
 body {
-    background-color: black;
+    background-color: #000000;
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 10px;
+    padding: 0px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #484B53;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3A3A3D;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #18191B;
+}
+
+::-webkit-scrollbar-corner {
+    background: #484B53;
 }
