@@ -9,6 +9,10 @@ body {
     -moz-font-smoothing: antialiased;
 }
 
+.appcontainer {
+    width: -webkit-fill-available;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
     height: 15px;
