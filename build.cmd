@@ -1,1 +1,0 @@
-cls & RMDIR /Q /s docs & npm run build & ren build docs
