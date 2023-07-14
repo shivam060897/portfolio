@@ -62,14 +62,14 @@ const App = () => {
             <TableCell sx={{ padding: 0, margin: 0, border: "2px solid #000000" }} rowSpan={2}><Education education={biodata.education} /></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell sx={{ padding: 0, margin: 0, border: "2px solid #000000" }}>
+            <TableCell sx={{ padding: 0, margin: 0, border: "2px solid #000000" }} className='autosize'>
               <Card sx={{ background: '#424242' }}>
                 <CardHeader title='Skills' sx={{ color: '#FFFFFF' }} />
                 <CardContent sx={{ marginTop: -3 }}>
-                  <Grid key="a" container direction="row" justifyContent="flex-start" alignItems="flex-start" spacing={2}>
-                    <Grid key="b" item><Grid key="c" container direction={'column'} justifyContent="flex-start" alignItems="flex-start">{biodata.skills.main.map((skill, index) => <Grid key={"d" + String(index)} item><Typography variant='caption' align='center' color={'#FFFFFF'}>{skill}</Typography></Grid>)}</Grid></Grid>
-                    <Divider orientation='vertical' flexItem sx={{ background: '#252525', marginLeft: 2, marginTop: 2 }} />
-                    <Grid key="e" item><Grid key="f" container direction={'column'} justifyContent="flex-start" alignItems="flex-start">{biodata.skills.secondary.map((skill, index) => <Grid key={"g" + String(index)} item><Typography variant='caption' align='center' color={'#FFFFFF'}>{skill}</Typography></Grid>)}</Grid></Grid>
+                  <Grid key="a" container direction="row" justifyContent="flex-start" alignItems="center" spacing={2}>
+                    <Grid key="b" item><Grid key="c" container direction={'column'} justifyContent="center" alignItems="flex-start">{biodata.skills.main.map((skill, index) => <Grid key={"d" + String(index)} item><Typography variant='caption' align='center' color={'#FFFFFF'}>{skill}</Typography></Grid>)}</Grid></Grid>
+                    <Divider orientation='vertical' flexItem sx={{ background: '#252525', marginLeft: 1, marginRight: -1, marginTop: 2 }} />
+                    <Grid key="e" item><Grid key="f" container direction={'column'} justifyContent="center" alignItems="flex-start">{biodata.skills.secondary.map((skill, index) => <Grid key={"g" + String(index)} item><Typography variant='caption' align='center' color={'#FFFFFF'}>{skill}</Typography></Grid>)}</Grid></Grid>
                   </Grid>
                 </CardContent>
               </Card>

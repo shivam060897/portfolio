@@ -51,8 +51,8 @@ const biodata = {
         }
     },
     skills: {
-        main: ["Python", "React JS", "Docker", "Docker Swarm", "MySQL", "Core Java"],
-        secondary: ["Linux", "Android Java", "HTML", "XML", "Shell Scripting"]
+        main: ["Python", "React JS", "Docker", "Linux", "MySQL", "Core Java"],
+        secondary: ["Docker Swarm", "Android Java", "HTML", "XML", "Shell Scripting"]
     },
     expericence: [
         {
