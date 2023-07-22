@@ -18,7 +18,7 @@ const biodata = {
     },
     contact: {
         phone: {
-            primary: null,
+            primary: "+1 (913) 306-7577",
             secondary: "+91 9348569931"
         },
         mail: "kumarshivamray0656@gmail.com",
