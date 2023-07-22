@@ -12,6 +12,7 @@ import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const App = () => {
+  console.log(biodata.contact.phone)
   return (
     <TableContainer>
       <Table>
@@ -30,7 +31,7 @@ const App = () => {
                         <Grid key="main5" item>
                           <Grid key="main51" container direction="row" justifyContent="flex-start" alignItems="center" spacing={1}>
                             <Grid key="main511" item><CallIcon sx={{ width: "15px", color: '#FFFFFF' }} /></Grid>
-                            <Grid key="main512" item><Typography variant='caption' align='center' color={'#FFFFFF'}>{biodata.contact.primary.secondary}</Typography></Grid>
+                            <Grid key="main512" item><Typography variant='caption' align='center' color={'#FFFFFF'}>{biodata.contact.phone.primary}</Typography></Grid>
                           </Grid>
                         </Grid>
                       ) : null

@@ -6,10 +6,10 @@ const Education = ({ education }) => {
     const years = Object.keys(education).sort((a, b) => a - b).reverse()
 
     return (
-        <Card sx={{ background: '#424242' }}>
+        <Card sx={{ background: '#424242'}}>
             <CardHeader title='Education' sx={{ color: '#FFFFFF' }} />
             <CardContent sx={{ marginTop: -2 }}>
-                <Grid key="edu" container direction="column" justifyContent="flex-start" alignItems="flex-start" spacing={4}>
+                <Grid key="edu" container direction="column" justifyContent="flex-start" alignItems="flex-start" spacing={6}>
                     <Grid key="edu-1" item sx={{ width: "100%" }}>
                         <Paper elevation={3} sx={{ padding: 2, background: '#303030' }}>
                             <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start">
